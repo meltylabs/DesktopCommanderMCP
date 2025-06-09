@@ -23,8 +23,11 @@ function processFile(filePath) {
 
   // Process each module
   nodeModules.forEach(module => {
-    // Skip if already has node: prefix
-    if (module === 'path') return; // Already has node:path in your list
+    // Skip if already has node: prefix in the import statement
+    const hasNodePrefix = new RegExp(
+      `(import\\s+(?:.*?\\s+from\\s+|))(['"])node:${module.replace('/', '\\/')}\\2`
+    ).test(content);
+    if (hasNodePrefix) continue;
     
     // Match import statements with single or double quotes
     const importRegex = new RegExp(
