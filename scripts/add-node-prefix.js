@@ -13,7 +13,9 @@ const nodeModules = [
   'child_process',
   'util',
   'https',
-  'crypto'
+  'crypto',
+  'readline',
+  'process'
 ];
 
 // Function to process a single file

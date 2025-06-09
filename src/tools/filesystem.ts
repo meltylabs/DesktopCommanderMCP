@@ -3,7 +3,7 @@ import path from "node:path";
 import os from 'node:os';
 import fetch from 'cross-fetch';
 import { createReadStream } from 'node:fs';
-import { createInterface } from 'readline';
+import { createInterface } from 'node:readline';
 import {capture} from '../utils/capture.js';
 import {withTimeout} from '../utils/withTimeout.js';
 import {configManager} from '../config-manager.js';
