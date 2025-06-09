@@ -1,6 +1,6 @@
-import { spawn, ChildProcess } from 'child_process';
+import { spawn, ChildProcess } from 'node:child_process';
 import path from 'path';
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 import { validatePath } from './filesystem.js';
 import { rgPath } from '@vscode/ripgrep';
 import {capture} from "../utils/capture.js";

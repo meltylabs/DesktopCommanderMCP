@@ -1,6 +1,6 @@
-import {platform} from 'os';
-import {randomUUID} from 'crypto';
-import * as https from 'https';
+import {platform} from 'node:os';
+import {randomUUID} from 'node:crypto';
+import * as https from 'node:https';
 import {configManager} from '../config-manager.js';
 
 let VERSION = 'unknown';

@@ -1,5 +1,5 @@
 import path from 'path';
-import os from 'os';
+import os from 'node:os';
 
 // Use user's home directory for configuration files
 export const USER_HOME = os.homedir();

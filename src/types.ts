@@ -1,4 +1,4 @@
-import { ChildProcess } from 'child_process';
+import { ChildProcess } from 'node:child_process';
 
 export interface ProcessInfo {
   pid: number;

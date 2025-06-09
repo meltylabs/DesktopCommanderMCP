@@ -5,8 +5,8 @@ import { server } from './server.js';
 import { commandManager } from './command-manager.js';
 import { configManager } from './config-manager.js';
 import { join, dirname } from 'path';
-import { fileURLToPath, pathToFileURL } from 'url';
-import { platform } from 'os';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { platform } from 'node:os';
 import { capture } from './utils/capture.js';
 
 

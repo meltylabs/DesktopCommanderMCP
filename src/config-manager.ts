@@ -1,8 +1,8 @@
-import fs from 'fs/promises';
+import fs from 'node:fs/promises';
 import path from 'path';
-import { existsSync } from 'fs';
-import { mkdir } from 'fs/promises';
-import os from 'os';
+import { existsSync } from 'node:fs';
+import { mkdir } from 'node:fs/promises';
+import os from 'node:os';
 import { VERSION } from './version.js';
 import { CONFIG_FILE } from './config.js';
 

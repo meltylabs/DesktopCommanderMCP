@@ -1,8 +1,8 @@
-import fs from "fs/promises";
+import fs from "node:fs/promises";
 import path from "path";
-import os from 'os';
+import os from 'node:os';
 import fetch from 'cross-fetch';
-import { createReadStream } from 'fs';
+import { createReadStream } from 'node:fs';
 import { createInterface } from 'readline';
 import {capture} from '../utils/capture.js';
 import {withTimeout} from '../utils/withTimeout.js';
