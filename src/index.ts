@@ -4,7 +4,7 @@ import { FilteredStdioServerTransport } from './custom-stdio.js';
 import { server } from './server.js';
 import { commandManager } from './command-manager.js';
 import { configManager } from './config-manager.js';
-import { join, dirname } from 'path';
+import { join, dirname } from 'node:path';
 import { fileURLToPath, pathToFileURL } from 'node:url';
 import { platform } from 'node:os';
 import { capture } from './utils/capture.js';

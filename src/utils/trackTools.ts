@@ -1,5 +1,5 @@
 import * as fs from 'node:fs';
-import * as path from 'path';
+import * as path from 'node:path';
 import { TOOL_CALL_FILE, TOOL_CALL_FILE_MAX_SIZE } from '../config.js';
 
 // Ensure the directory for the log file exists

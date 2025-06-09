@@ -27,7 +27,7 @@ function processFile(filePath) {
     const hasNodePrefix = new RegExp(
       `(import\\s+(?:.*?\\s+from\\s+|))(['"])node:${module.replace('/', '\\/')}\\2`
     ).test(content);
-    if (hasNodePrefix) continue;
+    if (hasNodePrefix) return;
     
     // Match import statements with single or double quotes
     // This handles both: import ... from "module" and import { ... } from "module"

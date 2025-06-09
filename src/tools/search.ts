@@ -1,5 +1,5 @@
 import { spawn, ChildProcess } from 'node:child_process';
-import path from 'path';
+import path from 'node:path';
 import fs from 'node:fs/promises';
 import { validatePath } from './filesystem.js';
 import { rgPath } from '@vscode/ripgrep';

@@ -1,4 +1,4 @@
-import path from 'path';
+import path from 'node:path';
 import os from 'node:os';
 
 // Use user's home directory for configuration files
